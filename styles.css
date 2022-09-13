@@ -1,0 +1,51 @@
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  font-family: sans-serif;
+  font-weight: bolder;
+  background-color: #d9e3fc;
+  color: #2b3b6a;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #b6c8f9;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  color: black;
+  background-color: #f1f1f1;
+}
+
+
+.chevron {
+    height:1rem;
+    font-size: 13px;
+    fill: #2b3b6a;
+    font-weight: 900;
+    float: right;
+    margin-left: 5px;
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-delay: 0s;
+}
+
+.active .chevron {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
